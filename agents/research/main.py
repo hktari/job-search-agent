@@ -13,7 +13,7 @@ search_tool = SerperDevTool()
 
 def create_research_agent(use_gpt=True):
     if use_gpt:
-        llm = ChatOpenAI(model="gpt-4o-mini")
+        llm = ChatOpenAI(model="o3-mini")
     else:
         llm = Ollama(model="llama3.1") 
 
