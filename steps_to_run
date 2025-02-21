@@ -6,6 +6,3 @@ pip install crewai python-dotenv langchain_openai langchain_community langchain_
 
 pip install 'crewai[tools]'
 
-export GOOGLE_API_KEY=AIzaSyALSBRZylzpJDfuyoL5FapH2qHZgWS0ikM
-
-export OPENAI_API_KEY=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
