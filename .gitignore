@@ -1,3 +1,8 @@
 .env
 
 myenv/
+
+agents/call-agent
+agents/simple-call-agent
+agents/jobs
+agents/agents

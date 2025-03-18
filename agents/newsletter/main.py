@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from crewai import Agent, Task, Crew
+from crewai import Agent, Task, Crew, LLM
 from crewai_tools import SerperDevTool
 from langchain_openai import ChatOpenAI
 from langchain_community.llms import Ollama
@@ -12,7 +12,7 @@ search_tool = SerperDevTool()
 
 def get_llm(use_gpt=True):
     if use_gpt:
-        return ChatOpenAI(model="gpt-4o-mini")
+        return LLM(model="openai/gpt-4o-mini", temperature=0.7)
     return Ollama(
         model="deepseek-r1:latest",
         base_url="http://localhost:11434",
