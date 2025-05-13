@@ -64,9 +64,7 @@ class JobHuntingAgent:
         skills_string = ", ".join(skills)
         
         urls = [
-            f"https://www.naukri.com/{formatted_job_title}-jobs-in-{formatted_location}",
-            f"https://www.indeed.com/jobs?q={formatted_job_title}&l={formatted_location}",
-            f"https://www.monster.com/jobs/search/?q={formatted_job_title}&where={formatted_location}",
+            f"https://slo-tech.com/delo",
         ]
         
         print(f"Searching for jobs with URLs: {urls}")
